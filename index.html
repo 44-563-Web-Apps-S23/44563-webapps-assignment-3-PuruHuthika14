@@ -2,8 +2,14 @@
 <html>
     <head>
         <title>
+            
             Web apps Assignment
         </title>
+        <style>
+            table, th , td{
+                border :0.5px solid black;
+            }
+        </style>
         <body>
             <h1>Yerragunta PuruHuthika</h1>
             <h6>Hockey</h6>
@@ -80,6 +86,25 @@
                 <td>100Days</td>
             </tr>
            </table>
+           <hr>
+           <h4>Code Snippet</h4>
+           <blockquote>
+            <a href="https://stackoverflow.com/questions/tagged/wordpress">WordPress stackoverflow</a>
+           </blockquote>
+           <pre> 
+            <?php query_posts('cat=-3'); ?>
+
+            <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : the_post(); ?>
+              <h3></h3>	
+              <p><?php the_time('F jS, Y') ?></p>
+              <?php the_content(); ?>
+            <?php endwhile; ?>
+
+            
+           </pre>
+           <a href =" https://css-tricks.com/snippets/wordpress/remove-specific-categories-from-the-loop/">Link for wordpress</a>
+
 
 
            <a href="aboutme.html">AboutMe</a>
